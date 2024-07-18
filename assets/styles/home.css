@@ -65,10 +65,10 @@
 
 .shape {
     background-color: var(--color-primary-5);
-    width: 50%;
+    width: 52%;
     height: 100%;
     position: absolute;
-    border-radius: 40% 0% 0% 18%;
+    border-radius: 40% 60% ;
     top: 0;
     right: 0;
     z-index: 1;
