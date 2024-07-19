@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="shortcut icon" href="assets/images/all_pé.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <title>All Pé - Landing Page</title>
 </head>
 
@@ -65,7 +68,8 @@
                 </h1>
 
                 <p class="description">
-                    <b>All Pé:</b> Tradição de mais de 90 anos no <b>Brasil</b>!
+                    <span>All Pé:</span> Somos a <b>maior</b> rede de podologia no <b>Brasil</b>! <br>Tradição de mais
+                    de 90 anos cuidando dos seus pés com excelência e cuidado.
                 </p>
 
                 <div id="cta_buttons">
@@ -90,7 +94,7 @@
             </div>
 
             <div id="banner">
-                <img src="assets/images/freepik-export-202407182101308kGU 1.png">
+                <img src="/assets/images/pe_Banner.png">
             </div>
         </section>
 
@@ -98,7 +102,7 @@
             <h2 class="section-title">Unidades</h2>
             <h3 class="section-subtitle">Encontre a loja mais próxima de você</h3>
 
-            <div id="dishes">
+            <div id="dishes" class="slider">
                 <div class="dish">
                     <div class="dish-phone">
                         <i class="fa-solid fa-phone-square"></i>
@@ -222,6 +226,96 @@
                         </button>
                     </div>
                 </div>
+                <div class="dish">
+                    <div class="dish-phone">
+                        <i class="fa-solid fa-phone-square"></i>
+                    </div>
+
+                    <img src="assets/images/candelaria.jpeg" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                       Unidade - Nova Parnamirim
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Horário de funcionamento:</b> Segunda a Sábado de 08h as às 18h.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-btn">
+                        <button class="btn-default">
+                            Fale conosco
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-phone">
+                        <i class="fa-solid fa-phone-square"></i>
+                    </div>
+
+                    <img src="assets/images/candelaria.jpeg" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                       Unidade - Tirol
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Horário de funcionamento:</b> Segunda a Sábado de 08h as às 18h.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-btn">
+                        <button class="btn-default">
+                            Fale conosco
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-phone">
+                        <i class="fa-solid fa-phone-square"></i>
+                    </div>
+
+                    <img src="assets/images/candelaria.jpeg" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                       Unidade - Petrópolis
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Horário de funcionamento:</b> Segunda a Sábado de 08h as às 18h.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-btn">
+                        <button class="btn-default">
+                            Fale conosco
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -292,7 +386,14 @@
 
         <div id="footer_items">
             <span id="copyright">
-                &copy Dr School - <B>CNPJ: 10.492.698/0002-44</B>
+                <b>All Pé - Dr. Scholl</b>
+                <br>
+                <b>CNPJ: 42.878.088/0001-99</b>
+                <br>
+                <b>&copy Dr School - (84) 3211-0808</b>
+                <br>
+                <a href="https://g.co/kgs/fHF2v6H">Maps</a>
+                <br>
             </span>
 
             <div class="social-media-buttons">

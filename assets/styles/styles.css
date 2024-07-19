@@ -11,7 +11,7 @@
     --color-primary-3: #b8ffc5; /* Verde muito claro */
     --color-primary-4: #80ff99; /* Verde claro */
     --color-primary-5: #4cff73; /* Verde claro mais forte */
-    --color-primary-6: #1aff4d; /* Verde claro intenso */
+    --color-primary-6: #1aff4d; /* Verde claro fortão */
 
     --color-neutral-0: #fff;
     --color-neutral-1: #1d1d1d;
@@ -36,6 +36,14 @@ section {
     padding: 28px 8%;
 }
 
+a {
+    transition: transform 1.5s ease;
+}
+
+a:hover {
+    transform: translateY(-5px);
+}
+
 .btn-default {
     border: none;
     display: flex;
@@ -48,10 +56,12 @@ section {
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color .3s ease;
+    transition: transform 0.5s ease;
 }
 
 .btn-default:hover {
     background-color: var(--color-primary-3);
+    transform: translateY(-5px);
 }
 
 .social-media-buttons {

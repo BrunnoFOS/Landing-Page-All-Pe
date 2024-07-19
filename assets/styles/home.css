@@ -50,6 +50,11 @@
     box-shadow: none;
 }
 
+.description span {
+    color: var(--color-primary-5);
+    font-weight: 680;
+}
+
 #banner {
     display: flex;
     align-items: start;
