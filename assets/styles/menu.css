@@ -48,6 +48,12 @@
     border-radius: 0px 37.5px 0px 42.5px;
 }
 
+.dish-image, iframe {
+    width: 100%;
+    border-radius: 15%;
+    height: 100%;
+}
+
 .dish-description {
     color: #434343;
     text-align: center;
