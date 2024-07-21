@@ -1,412 +1,467 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/all_pé.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>All Pé - Natal</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <link rel="shortcut icon" href="assets/images/all_pé.png" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>All Pé - Landing Page</title>
-</head>
-
-<body>
+  <body>
     <header>
-        <nav id="navbar">
-            <h1 id="nav_logo">
-                <img src="assets/images/all_pé.png" alt="logo">
+      <nav id="navbar">
+        <h1 id="nav_logo">
+          <img src="assets/images/all_pé.png" alt="logo" />
+        </h1>
 
-            </h1>
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Unidades</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
 
-            <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Unidades</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
 
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Unidades</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
-        </div>
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Unidades</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main id="content">
-        <section id="home">
-            <div class="shape"></div>
-            <div id="cta">
-                <h1 class="title">
-                    Seus <span>pés</span> em boas mãos
-                </h1>
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">Seus <span>pés</span> em boas mãos</h1>
 
-                <p class="description">
-                    <span>All Pé:</span> Somos a <b>maior</b> rede de podologia no <b>Brasil</b>! <br>Tradição de mais
-                    de 90 anos cuidando dos seus pés com excelência e cuidado.
+          <p class="description">
+            <span>All Pé:</span> Somos a <b>maior</b> rede de podologia no
+            <b>Brasil</b>! <br />Tradição de mais de 90 anos cuidando dos seus
+            pés com excelência e cuidado.
+          </p>
+
+          <div id="cta_buttons">
+            <a href="https://allpe.com.br/" class="btn-default">
+              Visite-nos em todo o Brasil
+            </a>
+          </div>
+
+          <div class="social-media-buttons">
+            <a
+              href="https://api.whatsapp.com/send/?phone=5584988730473&text&type=phone_number&app_absent=0"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.instagram.com/allpenatal/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100089968102274">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="banner">
+          <img src="assets/images/0.png" />
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Unidades</h2>
+        <h3 class="section-subtitle">Encontre a loja mais próxima de você</h3>
+
+        <div id="dishes" class="slider">
+          <div class="dish">
+            <div class="dish-phone">
+              <i class="fa-solid fa-phone-square"></i>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.5183345700175!2d-35.20672903023778!3d-5.782201844223137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3006e43d4a30f%3A0xcb2ff40d5b5657d2!2sAll%20P%C3%A9%20Dr.%20Scholl%20-%20Petr%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1721482452028!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <h3 class="dish-title">Petrópolis</h3>
+
+            <span class="dish-description">
+              <b>Horário de funcionamento:</b> <br />
+              Segunda a sexta das <b>08h</b> às <b>19h</b> <br />
+              Sábado das <b>08h</b> às <b>14h</b>
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-btn">
+              <button class="btn-default"><a style="text-decoration: none; color: #ffffeb;" href="https://api.whatsapp.com/send?1=pt_BR&phone=5584988730473">Fale conosco</a></button>
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish-phone">
+              <i class="fa-solid fa-phone-square"></i>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1179669635194!2d-35.21783262598026!3d-5.8389922575473925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255e293057997%3A0xd480d7599782bea2!2sAll%20P%C3%A9%20Dr.%20Scholl&#39;s!5e0!3m2!1spt-BR!2sbr!4v1721482586484!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <h3 class="dish-title">Candelária</h3>
+
+            <span class="dish-description">
+              <b>Horário de funcionamento:</b> <br />
+              Segunda a sexta das <b>08h</b> às <b>19h</b> <br />
+              Sábado das <b>08h</b> às <b>18h</b>
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-btn">
+              <button class="btn-default"><a style="text-decoration: none; color: #ffffeb;" href="https://api.whatsapp.com/send?1=pt_BR&phone=5584992139861">Fale conosco</a></button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-phone">
+              <i class="fa-solid fa-phone-square"></i>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1179669635194!2d-35.21783262598026!3d-5.8389922575473925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255e293057997%3A0xd480d7599782bea2!2sAll%20P%C3%A9%20Dr.%20Scholl&#39;s!5e0!3m2!1spt-BR!2sbr!4v1721482586484!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <h3 class="dish-title">Cidade Verde</h3>
+
+            <span class="dish-description">
+              <b>Horário de funcionamento:</b> <br />
+              Segunda a sábado das <b>09h</b> às <b>21h</b> <br />
+              Domingo das <b>14h</b> às <b>20h</b>
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-btn">
+              <button class="btn-default"><a style="text-decoration: none; color: #ffffeb;" href="https://api.whatsapp.com/send?1=pt_BR&phone=5584994676717">Fale conosco</a></button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-phone">
+              <i class="fa-solid fa-phone-square"></i>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.9510815390763!2d-35.1951718302329!3d-5.862502344730895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff3ec9007ca1%3A0x968ff8fda0a12e8b!2zQWxsIFDDqQ!5e0!3m2!1spt-BR!2sbr!4v1721482292953!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <h3 class="dish-title">Ponta Negra</h3>
+
+            <span class="dish-description">
+              <b>Horário de funcionamento:</b> <br />
+              Segunda a sexta das <b>08h</b> às <b>19h</b> <br />
+              Sábado das <b>08h</b> às <b>18h</b>
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-btn">
+              <button class="btn-default"><a style="text-decoration: none; color: #ffffeb;" href="https://api.whatsapp.com/send?1=pt_BR&phone=5584988730473">Fale conosco</a></button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-phone">
+              <i class="fa-solid fa-phone-square"></i>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.253413560509!2d-35.22028722598048!3d-5.819841557384212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255380da366ab%3A0x3f7fc2ab0dd45122!2sAll%20P%C3%A9%20Dr.%20Scholl!5e0!3m2!1spt-BR!2sbr!4v1721482555254!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <h3 class="dish-title">Lagoa Nova</h3>
+
+            <span class="dish-description">
+              <b>Horário de funcionamento:</b> <br />
+              Segunda a sexta das <b>08h</b> às <b>19h</b> <br />
+              Sábado das <b>08h</b> às <b>18h</b>
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-btn">
+              <button class="btn-default"><a style="text-decoration: none; color: #ffffeb;" href="https://api.whatsapp.com/send?1=pt_BR&phone=5584988730473">Fale conosco</a></button>
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish-phone">
+              <i class="fa-solid fa-phone-square"></i>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31751.69019647287!2d-35.22016752179471!3d-5.861069091392126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2f8ac7b110ba5%3A0xdd65e253d14e6694!2zQWxsIFDDqQ!5e0!3m2!1spt-BR!2sbr!4v1721482424105!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <h3 class="dish-title">Nova Parnamirim</h3>
+
+            <span class="dish-description">
+              <b>Horário de funcionamento:</b> <br />
+              Segunda a sexta das <b>08h</b> às <b>19h</b> <br />
+              Sábado das <b>08h</b> às <b>18h</b>
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-btn">
+              <button class="btn-default"><a style="text-decoration: none; color: #ffffeb;" href="https://api.whatsapp.com/send?1=pt_BR&phone=5584988730473">Fale conosco</a></button>
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish-phone">
+              <i class="fa-solid fa-phone-square"></i>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.3671193130685!2d-35.20790502598079!3d-5.803716157247279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2fffc5eab4b4d%3A0xf26a86132ec46b83!2sAll%20P%C3%A9%20-%20Tirol!5e0!3m2!1spt-BR!2sbr!4v1721482203324!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <h3 class="dish-title">Tirol</h3>
+
+            <span class="dish-description">
+              <b>Horário de funcionamento:</b> <br />
+              Segunda a sexta das <b>08h</b> às <b>18h</b> <br />
+              Sábado das <b>08h</b> às <b>18h</b>
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(30+)</span>
+            </div>
+
+            <div class="dish-btn">
+              <button class="btn-default"><a style="text-decoration: none; color: #ffffeb;" href="https://api.whatsapp.com/send?1=pt_BR&phone=5584988730473">Fale conosco</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <img src="assets/images/logoAPNatal.png" id="testimonial_chef" alt="" />
+
+        <div id="testimonials_content">
+          <h2 class="section-title">Avaliações</h2>
+          <h3 class="section-subtitle">Será que a All Pé é mesmo tudo isso?</h3>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <img
+                src="assets/images/avatar_Mulher.png"
+                class="feedback-avatar"
+                alt=""
+              />
+
+              <div class="feedback-content">
+                <p>
+                  Rejane Suely
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
                 </p>
-
-                <div id="cta_buttons">
-                    <a href="https://allpe.com.br/" class="btn-default">
-                        Visite-nos em todo o Brasil
-                    </a>
-                </div>
-
-                <div class="social-media-buttons">
-                    <a href="https://api.whatsapp.com/send/?phone=5584988730473&text&type=phone_number&app_absent=0">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/allpenatal/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="https://www.facebook.com/profile.php?id=100089968102274">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </div>
+                <p>
+                  "Sempre muito bem atendida pelas meninas da recepção que são
+                  uns doces, solícitas e contando com a ajuda de profissionais muito competentes."
+                </p>
+              </div>
             </div>
 
-            <div id="banner">
-                <img src="assets/images/banner_Pe.png">
+            <div class="feedback">
+              <img
+                src="assets/images/avatar_Homem.png"
+                class="feedback-avatar"
+                alt=""
+              />
+
+              <div class="feedback-content">
+                <p>
+                  Brunno Ferreira
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Excelente atendimento, equipe comprometida, com profissionais de primeira linha, super recomendo."
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section id="menu">
-            <h2 class="section-title">Unidades</h2>
-            <h3 class="section-subtitle">Encontre a loja mais próxima de você</h3>
-
-            <div id="dishes" class="slider">
-                <div class="dish">
-                    <div class="dish-phone">
-                        <i class="fa-solid fa-phone-square"></i>
-                    </div>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.5183345700175!2d-35.20672903023778!3d-5.782201844223137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3006e43d4a30f%3A0xcb2ff40d5b5657d2!2sAll%20P%C3%A9%20Dr.%20Scholl%20-%20Petr%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1721482452028!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                    <h3 class="dish-title">
-                       Petrópolis
-                    </h3>
-
-                    <span class="dish-description">
-                        <b>Horário de funcionamento:</b> Segunda a sexta das 08h às 19h <br> Sábado das 08h às 14h.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-btn">
-                        <button class="btn-default">
-                            Fale conosco
-                        </button>
-                    </div>
-                </div>
-                <div class="dish">
-                    <div class="dish-phone">
-                        <i class="fa-solid fa-phone-square"></i>
-                    </div>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1179669635194!2d-35.21783262598026!3d-5.8389922575473925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255e293057997%3A0xd480d7599782bea2!2sAll%20P%C3%A9%20Dr.%20Scholl&#39;s!5e0!3m2!1spt-BR!2sbr!4v1721482586484!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                    <h3 class="dish-title">
-                      Candelária
-                    </h3>
-
-                    <span class="dish-description">
-                        <b>Horário de funcionamento:</b> Segunda a Sábado de 08h as às 18h.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-btn">
-                        <button class="btn-default">
-                            Fale conosco
-                        </button>
-                    </div>
-                </div>
-
-                <div class="dish">
-                    <div class="dish-phone">
-                        <i class="fa-solid fa-phone-square"></i>
-                    </div>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1179669635194!2d-35.21783262598026!3d-5.8389922575473925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255e293057997%3A0xd480d7599782bea2!2sAll%20P%C3%A9%20Dr.%20Scholl&#39;s!5e0!3m2!1spt-BR!2sbr!4v1721482586484!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
-                    <h3 class="dish-title">
-                       Cidade Verde
-                    </h3>
-
-                    <span class="dish-description">
-                        <b>Horário de funcionamento:</b> Segunda a Sábado de 08h as às 18h.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-btn">
-                        <button class="btn-default">
-                            Fale conosco
-                        </button>
-                    </div>
-                </div>
-
-                <div class="dish">
-                    <div class="dish-phone">
-                        <i class="fa-solid fa-phone-square"></i>
-                    </div>
-                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.9510815390763!2d-35.1951718302329!3d-5.862502344730895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff3ec9007ca1%3A0x968ff8fda0a12e8b!2zQWxsIFDDqQ!5e0!3m2!1spt-BR!2sbr!4v1721482292953!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                    <h3 class="dish-title">
-                       Ponta Negra
-                    </h3>
-
-                    <span class="dish-description">
-                        <b>Horário de funcionamento:</b> Segunda a Sábado de 08h as às 18h.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-btn">
-                        <button class="btn-default">
-                            Fale conosco
-                        </button>
-                    </div>
-                </div>
-
-                <div class="dish">
-                    <div class="dish-phone">
-                        <i class="fa-solid fa-phone-square"></i>
-                    </div>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.253413560509!2d-35.22028722598048!3d-5.819841557384212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255380da366ab%3A0x3f7fc2ab0dd45122!2sAll%20P%C3%A9%20Dr.%20Scholl!5e0!3m2!1spt-BR!2sbr!4v1721482555254!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <h3 class="dish-title">
-                       Lagoa Nova
-                    </h3>
-
-                    <span class="dish-description">
-                        <b>Horário de funcionamento:</b> Segunda a Sábado de 08h as às 18h.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-btn">
-                        <button class="btn-default">
-                            Fale conosco
-                        </button>
-                    </div>
-                </div>
-                <div class="dish">
-                    <div class="dish-phone">
-                        <i class="fa-solid fa-phone-square"></i>
-                    </div>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31751.69019647287!2d-35.22016752179471!3d-5.861069091392126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2f8ac7b110ba5%3A0xdd65e253d14e6694!2zQWxsIFDDqQ!5e0!3m2!1spt-BR!2sbr!4v1721482424105!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                    <h3 class="dish-title">
-                       Nova Parnamirim
-                    </h3>
-
-                    <span class="dish-description">
-                        <b>Horário de funcionamento:</b> Segunda a Sábado de 08h as às 18h.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-btn">
-                        <button class="btn-default">
-                            Fale conosco
-                        </button>
-                    </div>
-                </div>
-                <div class="dish">
-                    <div class="dish-phone">
-                        <i class="fa-solid fa-phone-square"></i>
-                    </div>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.3671193130685!2d-35.20790502598079!3d-5.803716157247279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2fffc5eab4b4d%3A0xf26a86132ec46b83!2sAll%20P%C3%A9%20-%20Tirol!5e0!3m2!1spt-BR!2sbr!4v1721482203324!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                    <h3 class="dish-title">
-                       Tirol
-                    </h3>
-
-                    <span class="dish-description">
-                        <b>Horário de funcionamento:</b> Segunda a Sábado de 08h as às 18h.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-btn">
-                        <button class="btn-default">
-                            Fale conosco
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials">
-            <img src="assets/images/logoAPNatal.png" id="testimonial_chef" alt="">
-
-            <div id="testimonials_content">
-                <h2 class="section-title">
-                    Avaliações
-                </h2>
-                <h3 class="section-subtitle">
-                    Será que a All Pé é mesmo tudo isso?
-                </h3>
-
-                <div id="feedbacks">
-                    <div class="feedback">
-                        <img src="assets/images/avatar.png" class="feedback-avatar" alt="">
-
-                        <div class="feedback-content">
-                            <p>
-                                Fulana de Tal
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="feedback">
-                        <img src="assets/images/avatar.png" class="feedback-avatar" alt="">
-
-                        <div class="feedback-content">
-                            <p>
-                                Fulana de Tal
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="btn-default">
-                    Ver mais avaliações
-                </button>
-            </div>
-        </section>
+          <button class="btn-default">Ver mais avaliações</button>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <img src="assets/images/wave.svg" alt="">
+      <img src="assets/images/wave.svg" alt="" />
 
-        <div id="footer_items">
-            <span id="copyright">
-                <b>All Pé - Dr. Scholl</b>
-                <br>
-                <b>CNPJ: 42.878.088/0001-99</b>
-                <br>
-                <b>&copy Dr School - (84) 3211-0808</b>
-                <br>
-                <a href="https://g.co/kgs/fHF2v6H">Maps</a>
-                <br>
-            </span>
+      <div id="footer_items">
+        <span id="copyright">
+          <b>All Pé - Dr. Scholl</b>
+          <br />
+          <b>CNPJ: 42.878.088/0001-99</b>
+          <br />
+          <b>&copy Dr School - (84) 3211-0808</b>
+          <br />
+          <p><a href="https://g.co/kgs/fHF2v6H" style="color: var(--color-neutral-1);">Maps</a></p>
+          <br />
+        </span>
 
-            <div class="social-media-buttons">
-                <a href="https://api.whatsapp.com/send/?phone=5584988730473&text&type=phone_number&app_absent=0">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
+        <div class="social-media-buttons">
+          <a
+            href="https://api.whatsapp.com/send/?phone=5584988730473&text&type=phone_number&app_absent=0"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
 
-                <a href="https://www.instagram.com/allpenatal/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+          <a href="https://www.instagram.com/allpenatal/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
 
-                <a href="https://www.facebook.com/profile.php?id=100089968102274">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </div>
+          <a href="https://www.facebook.com/profile.php?id=100089968102274">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
         </div>
+      </div>
     </footer>
-    <script src="/assets/js/script.js"></script>
-</body>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
