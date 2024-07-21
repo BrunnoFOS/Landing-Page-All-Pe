@@ -7,11 +7,11 @@
 
 :root {
     --color-primary-1: #ffffeb; /* Branco */
-    --color-primary-2: #e8ffeb; /* Esbranquiçado com leve toque verde */
-    --color-primary-3: #b8ffc5; /* Verde muito claro */
-    --color-primary-4: #80ff99; /* Verde claro */
-    --color-primary-5: #4cff73; /* Verde claro mais forte */
-    --color-primary-6: #1aff4d; /* Verde claro fortão */
+--color-primary-2: #eaffd9; /* Verde muito claro */
+--color-primary-3: #d4ffb8; /* Verde claro */
+--color-primary-4: #a8ff80; /* Verde claro */
+--color-primary-5: #7cff4c; /* Verde claro forte */
+--color-primary-6: #547642; /* Verde */
 
     --color-neutral-0: #fff;
     --color-neutral-1: #1d1d1d;
@@ -49,7 +49,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-primary-5);
+    background-color: var(--color-primary-6);
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
@@ -57,15 +57,17 @@ a:hover {
     cursor: pointer;
     transition: background-color .3s ease;
     transition: transform 0.5s ease;
+    color: var(--color-neutral-0);
 }
 
 .btn-default:hover {
     background-color: var(--color-primary-3);
+    color: var(--color-neutral-1);
     transform: translateY(-5px);
 }
 
 .social-media-buttons {
-    display: flex;
+    display: flex;  
     gap: 18px;
 }
 

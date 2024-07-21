@@ -18,7 +18,7 @@
 }
 
 #cta .title span {
-    color: var(--color-primary-5);
+    color: var(--color-primary-6);
 }
 
 #cta .description {
@@ -32,7 +32,6 @@
 
 #cta_buttons a {
     text-decoration: none;
-    color: var(--color-neutral-1);
 }
 
 #phone_button {
@@ -51,7 +50,7 @@
 }
 
 .description span {
-    color: var(--color-primary-5);
+    color: var(--color-primary-6);
     font-weight: 680;
 }
 
@@ -59,7 +58,7 @@
     display: flex;
     align-items: start;
     justify-content: end;
-    width: 70%;
+    width: 100%;
     z-index: 2;
 }
 
@@ -69,11 +68,11 @@
 }
 
 .shape {
-    background-color: var(--color-primary-5);
+    background-color: var(--color-primary-6);
     width: 52%;
     height: 100%;
     position: absolute;
-    border-radius: 60%;
+    border-radius: 75% 50% 75% 60%;
     top: 0;
     right: 0;
     z-index: 1;
