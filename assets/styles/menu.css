@@ -49,8 +49,8 @@
 }
 
 .dish-image, iframe {
-    width: 100%;
-    border-radius: 15%;
+    width: 90%;
+    border-radius: 20%;
     height: 100%;
 }
 
