@@ -4,11 +4,11 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 20px; 
 }
 
 .section-title, .section-subtitle {
     text-align: center;
-
 }
 
 #menuServ .section-subtitle {
@@ -25,6 +25,7 @@
 
 .service {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     background-color: var(--color-neutral-0);
@@ -34,8 +35,9 @@
 }
 
 .image-service {
-    width: 400px;
-    height: 320px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 20%;
     object-fit: cover;
 }
@@ -47,6 +49,29 @@
 .service-content p {
     display: flex;
     justify-content: space-between;
+}
+
+@media (min-width: 480px) {
+    #services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .image-service {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .service-content {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -61,10 +86,6 @@
         width: 48%;
     }
 
-    #testimonials .section-subtitle {
-        font-size: 2rem;
-    }
-
     .image-service {
         width: 50%;
         height: auto;
@@ -77,11 +98,8 @@
 
 @media (min-width: 1024px) {
     #menuServ {
+        flex-direction: row;
         padding: 40px;
-    }
-
-    #testimonials .section-subtitle {
-        font-size: 2.5rem;
     }
 
     .service {
@@ -90,11 +108,22 @@
     }
 
     .image-service {
-        width: 400px;
+        width: 40%;
         height: 320px;
     }
 
     .service-content {
         width: 60%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .image-service {
+        width: 30%;
+        height: auto;
+    }
+
+    .service-content {
+        width: 70%;
     }
 }
