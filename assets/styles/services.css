@@ -36,14 +36,19 @@
 
 .image-service {
     width: 100%;
-    max-width: 400px;
+    max-width: 560px;
     height: auto;
-    border-radius: 20%;
+    border-radius: 20px;
     object-fit: cover;
 }
 
 .service-content p span {
     color: var(--color-primary-6);
+}
+
+.service-content h2 {
+margin-top: 5px;
+margin-bottom: 20px;
 }
 
 .service-content p {
