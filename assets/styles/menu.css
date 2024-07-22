@@ -48,7 +48,13 @@
     border-radius: 0px 37.5px 0px 42.5px;
 }
 
-.dish-image, iframe {
+.dish-image {
+    width: 100%;
+    border-radius: 10%;
+    height: 100%;
+}
+
+iframe {
     width: 90%;
     border-radius: 20%;
     height: 100%;

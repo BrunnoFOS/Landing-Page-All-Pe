@@ -4,14 +4,21 @@
 @import url('menu.css');
 @import url('testimonials.css');
 @import url('footer.css');
+@import url('services.css');
 
 :root {
-    --color-primary-1: #ffffeb; /* Branco */
---color-primary-2: #eaffd9; /* Verde muito claro */
---color-primary-3: #d4ffb8; /* Verde claro */
---color-primary-4: #a8ff80; /* Verde claro */
---color-primary-5: #7cff4c; /* Verde claro forte */
---color-primary-6: #547642; /* Verde */
+    --color-primary-1: #ffffeb;
+    /* Branco amarelado*/
+    --color-primary-2: #eaffd9;
+    /* Verde muito claro */
+    --color-primary-3: #d4ffb8;
+    /* Verde claroinho*/
+    --color-primary-4: #a8ff80;
+    /* Verde claro */
+    --color-primary-5: #7cff4c;
+    /* Verde claro forte */
+    --color-primary-6: #547642;
+    /* Verde da cor da logo*/
 
     --color-neutral-0: #fff;
     --color-neutral-1: #1d1d1d;
@@ -67,7 +74,7 @@ a:hover {
 }
 
 .social-media-buttons {
-    display: flex;  
+    display: flex;
     gap: 18px;
 }
 
@@ -81,7 +88,8 @@ a:hover {
     font-size: 1.25rem;
     border-radius: 10px;
     text-decoration: none;
-    color: var(--color-neutral-1);;
+    color: var(--color-neutral-1);
+    ;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow .3s ease;
 }
@@ -97,5 +105,4 @@ a:hover {
 
 .section-subtitle {
     font-size: 2.1875rem;
-} 
-
+}
