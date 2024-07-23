@@ -64,20 +64,168 @@
     justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-    .service {
-        flex-direction: column;
-        align-items: flex-start;
-        flex: 1 1 100%;
-        text-align: justify;
+@media (max-width: 480px) {
+    #menuServ {
+        padding: 10px;
     }
 
-    .service img {
-        margin: 15px 0 15px 15px;
-        width: 90%;
+    #services {
+        gap: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .image-service {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     .service-content {
         max-width: 100%;
+        text-align: center;
     }
 }
+
+@media (min-width: 481px) and (max-width: 768.5px) {
+    #menuServ {
+        padding: 10px;
+    }
+
+    #services {
+        gap: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        max-width: 80%;
+        margin-left: 80px;
+    }
+
+    .image-service {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .service-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #menuServ {
+        padding: 10px;
+    }
+
+    #services {
+        gap: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        max-width: 80%;
+        margin-left: 80px;
+    }
+
+    .image-service {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .service-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #menuServ {
+        padding: 10px;
+    }
+
+    #services {
+        gap: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        ;
+    }
+
+    .image-service {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .service-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1280px) {
+    #menuServ {
+        padding: 30px;
+    }
+
+    #services {
+        gap: 30px;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        max-width: 80%;
+        margin-left: 115px;
+    }
+
+    .image-service {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .service-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
