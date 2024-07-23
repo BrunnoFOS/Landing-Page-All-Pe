@@ -38,6 +38,9 @@
         <li class="nav-item">
           <a href="#testimonials">Avaliações</a>
         </li>
+        <li class="nav-item">
+          <a href="#contactForm">Contato</a>
+        </li>
       </ul>
 
       <button id="mobile_btn">
@@ -58,6 +61,8 @@
         </li>
         <li class="nav-item">
           <a href="#testimonials">Avaliações</a>
+        <li class="nav-item">
+          <a href="#contactForm">Contato</a>
         </li>
       </ul>
     </div>
@@ -108,8 +113,8 @@
           Conheça alguns de nossos procedimentos
         </h3>
         <div>
-          <div id="services" >
-            <div class="service" >
+          <div id="services">
+            <div class="service">
               <img src="https://allpe.com.br/wp-content/uploads/2024/07/01-1-scaled.jpg" class="image-service" alt="" />
 
               <div class="service-content">
@@ -123,13 +128,17 @@
                 </p>
               </div>
             </div>
-            <div class="service" >
+            <div class="service">
               <img src="assets/images/tratamento-de-micose-gr.jpg" class="image-service" alt="" />
 
               <div class="service-content">
                 <h2><b>Tratamento de Micoses de Unha</b></h2>
                 <p>
-                  A micose de unha e uma infecção causada por fungos. O tratamento inicial consiste em técnica diferenciada de abrasão e limpeza da unha, peeling para remoção e maceração, uso de antifúngico tópico e tratamento a laser.  O laser é uma tecnologia usada para acelerar o processo de cura da micose de unha e ainda apresenta o benefício de acelerar o crescimento da unha saudável. É uma técnica indolor e segura..
+                  A micose de unha e uma infecção causada por fungos. O tratamento inicial consiste em técnica
+                  diferenciada de abrasão e limpeza da unha, peeling para remoção e maceração, uso de antifúngico tópico
+                  e tratamento a laser. O laser é uma tecnologia usada para acelerar o processo de cura da micose de
+                  unha e ainda apresenta o benefício de acelerar o crescimento da unha saudável. É uma técnica indolor e
+                  segura..
                 </p>
               </div>
             </div>
@@ -446,6 +455,30 @@
         </button>
       </div>
     </section>
+
+    <section id="contactForm">
+      <form action="https://api.staticforms.xyz/submit" method="post" id="formContact">
+        <input type="hidden" name="accessKey" value="c9388467-f145-4935-a0d4-75ba9efd3d27">
+        <label for="name">Nome:</label>
+        <input id="nome" type="text" name="Nome" placeholder="Como devemos te chamar?">
+        <div id="nomeError" class="error" style="display:none;color:red;">Por favor, preencha seu nome.</div>
+
+        <label for="email">Email:</label>
+        <input id="email" type="text" name="E-mail" placeholder="Digite seu melhor e-mail!">
+        <div id="emailError" class="error" style="display:none;color:red;">Por favor, preencha seu email.</div>
+
+        <label for="numero">Telefone:</label>
+        <input id="numero" type="tel" name="Número" placeholder="Digite seu telefone com DDD. Ex: 84998765432">
+        <div id="numeroError" class="error" style="display:none;color:red;">Por favor, preencha seu telefone.</div>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="Mensagem do cliente" id="mensagem" placeholder="Digite sua mensagem."></textarea>
+        <div id="mensagemError" class="error" style="display:none;color:red;">Por favor, preencha sua mensagem.</div>
+        <div id="mensagemEnviada" style="display:none;color:green;">Sua mensagem foi enviada com sucesso!</div>
+        <button class="btn-default">Enviar</button>
+        
+      </form>
+    </section>
   </main>
 
   <footer>
@@ -453,15 +486,16 @@
 
     <div id="footer_items">
       <span id="copyright">
-        <b>All Pé - Dr. Scholl</b>
+        <b>&copy All Pé </b>
         <br />
         <b>CNPJ: 42.878.088/0001-99</b>
         <br />
-        <b>&copy Dr School - (84) 3211-0808</b>
+        <b>Telefone: (84) 3211-0808</b>
         <br />
         <b>Razão social: ALL PE PETROPOLIS SERVICOS E COMERCIO VAREJISTA DE CALCADOS LTDA</b>
         <p>
-          <a href="https://g.co/kgs/fHF2v6H" style="color: var(--color-neutral-1)">R. Seridó, 331 - Petrópolis, Natal - RN, 59020-010</a>
+          <a href="https://g.co/kgs/fHF2v6H" style="color: var(--color-neutral-1)">R. Seridó, 331 - Petrópolis, Natal -
+            RN, 59020-010</a>
         </p>
         <br />
       </span>

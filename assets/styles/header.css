@@ -65,6 +65,7 @@ header {
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
+        color: var(--color-neutral-1);
     }
 
     #mobile_menu.active {

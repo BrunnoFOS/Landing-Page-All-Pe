@@ -5,6 +5,7 @@
 @import url('testimonials.css');
 @import url('footer.css');
 @import url('services.css');
+@import url('form.css');
 
 :root {
     --color-primary-1: #ffffeb;

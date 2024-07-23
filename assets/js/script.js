@@ -97,3 +97,51 @@ $(document).ready(function() {
 
     inicializar();
 });
+
+document.getElementById('formContact').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let numero = document.getElementById('numero').value;
+    let mensagem = document.getElementById('mensagem').value;
+    let mensagemEnviada = document.getElementById('mensagemEnviada');
+
+    let hasError = false;
+
+    if (nome === '') {
+        document.getElementById('nomeError').style.display = 'block';
+        hasError = true;
+    } else {
+        document.getElementById('nomeError').style.display = 'none';
+    }
+
+    if (email === '') {
+        document.getElementById('emailError').style.display = 'block';
+        hasError = true;
+    } else {
+        document.getElementById('emailError').style.display = 'none';
+    }
+
+    if (numero === '') {
+        document.getElementById('numeroError').style.display = 'block';
+        hasError = true;
+    } else {
+        document.getElementById('numeroError').style.display = 'none';
+    }
+
+    if (mensagem === '') {
+        document.getElementById('mensagemError').style.display = 'block';
+        hasError = true;
+    } else {
+        document.getElementById('mensagemError').style.display = 'none';
+    }
+
+    if (!hasError) {
+        mensagemEnviada.style.display = 'block';
+        setTimeout(function() {
+            mensagemEnviada.style.display = 'none';
+            document.getElementById('formContact').submit();
+        }, 2000);
+    }
+});
