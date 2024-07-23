@@ -457,8 +457,7 @@
     </section>
 
     <section id="contactForm">
-      <form action="https://api.staticforms.xyz/submit" method="post" id="formContact">
-        <input type="hidden" name="accessKey" value="c9388467-f145-4935-a0d4-75ba9efd3d27">
+      <form  id="formContact" action="https://api.staticforms.xyz/submit" method="post">
         <label for="name">Nome:</label>
         <input id="nome" type="text" name="Nome" placeholder="Como devemos te chamar?">
         <div id="nomeError" class="error" style="display:none;color:red;">Por favor, preencha seu nome.</div>
@@ -476,7 +475,8 @@
         <div id="mensagemError" class="error" style="display:none;color:red;">Por favor, preencha sua mensagem.</div>
         <div id="mensagemEnviada" style="display:none;color:green;">Sua mensagem foi enviada com sucesso!</div>
         <button class="btn-default">Enviar</button>
-        
+        <input type="hidden" name="redirectTo" value="">
+        <input type="hidden" name="accessKey" value="c9388467-f145-4935-a0d4-75ba9efd3d27">
       </form>
     </section>
   </main>
