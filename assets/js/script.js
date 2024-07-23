@@ -71,7 +71,7 @@ $(document).ready(function() {
         ScrollReveal().reveal('.service', {
             origin: 'right',
             duration: 1000,
-            distance: '20%'
+            distance: '8%'
         });
 
         ScrollReveal().reveal('#banner', {
@@ -97,23 +97,3 @@ $(document).ready(function() {
 
     inicializar();
 });
-/*
-let index = 0;
-const slides = document.querySelectorAll('.di1sh');
-const totalSlides = slides.length;
-
-function showSlide(n) {
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${(i - n) * 100}%)`;
-    });
-}
-
-function nextSlide() {
-    index = (index + 1) % totalSlides;
-    showSlide(index);
-}
-
-setInterval(nextSlide, 2000); 
-
-showSlide(index);*/
-
