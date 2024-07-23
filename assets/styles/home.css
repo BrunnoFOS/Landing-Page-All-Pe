@@ -78,15 +78,15 @@
     z-index: 1;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 480px) {
     #home {
-        min-height: 100%;
+        flex-direction: column;
+        align-items: center;
         padding-top: 0px;
     }
 
     #banner,
-    #banner img,
-    #home .shape {
+    .shape {
         display: none;
     }
 
@@ -95,10 +95,139 @@
         text-align: center;
         align-items: center;
     }
+
+    #cta .title {
+        font-size: 2.8rem;
+    }
+
+    #cta .description {
+        font-size: 1.2rem;
+    }
+
+    #cta_buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 
-@media screen and (max-width: 450px) {
-    #phone_button button {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+    }
+
+    #banner,
+    .shape {
         display: none;
+    }
+
+    #cta {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #cta .title {
+        font-size: 5rem;
+    }
+
+    #cta .description {
+        font-size: 2.5rem;
+    }
+
+    #cta_buttons {
+        flex-direction: column;
+        gap: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #home {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+    }
+
+    #banner,
+    .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #cta .title {
+        font-size: 5rem;
+    }
+
+    #cta .description {
+        font-size: 2.5rem;
+    }
+
+    #cta_buttons {
+        flex-direction: row;
+        gap: 24px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #cta {
+        width: 40%;
+        margin-top: 5%;
+    }
+
+    #cta .title {
+        font-size: 4rem;
+    }
+
+    #cta .description {
+        font-size: 1.2rem;
+    }
+
+    #cta_buttons {
+        gap: 24px;
+    }
+
+    #phone_button {
+        padding: 14px 20px;
+    }
+    #banner {
+        width: 60%;
+    }
+    .shape {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    #cta {
+        width: 35%;
+        text-align: left;
+        align-items: flex-start;
+    }
+    #banner {
+        width: 60%;
+    }
+    .shape {
+        width: 60%;
+    }
+
+    #cta .title {
+        font-size: 4rem;
+    }
+
+    #cta .description {
+        font-size: 1.2rem;
+    }
+
+    #cta_buttons {
+        flex-direction: row;
+        gap: 24px;
     }
 }
