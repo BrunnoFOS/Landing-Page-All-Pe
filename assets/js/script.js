@@ -47,44 +47,69 @@ $(document).ready(function() {
         ScrollReveal().reveal('#cta', {
             origin: 'left',
             duration: 2000,
-            distance: '20%'
+            distance: '10%'
         });
 
         ScrollReveal().reveal('.dish', {
             origin: 'left',
             duration: 2000,
-            distance: '20%'
+            distance: '10%'
         });
 
         ScrollReveal().reveal('#testimonial_chef', {
             origin: 'left',
-            duration: 1000,
-            distance: '20%'
+            duration: 2000,
+            distance: '10%'
         });
 
         ScrollReveal().reveal('.feedback', {
             origin: 'right',
             duration: 1000,
-            distance: '20%'
+            distance: '10%'
         });
 
         ScrollReveal().reveal('.service', {
             origin: 'right',
             duration: 1000,
-            distance: '8%'
+            distance: '5%'
         });
 
         ScrollReveal().reveal('#banner', {
             origin: 'top',
             duration: 2000,
-            distance: '30%'
+            distance: '15%'
         });
 
         ScrollReveal().reveal('.shape', {
             origin: 'right',
             duration: 1000,
+            distance: '10%'
+        });
+
+        ScrollReveal().reveal('input', {
+            origin: 'left',
+            duration: 1000,
+            distance: '5%'
+        });
+
+        ScrollReveal().reveal('textarea ', {
+            origin: 'left',
+            duration: 1000,
+            distance: '5%'
+        });
+
+        ScrollReveal().reveal('label', {
+            origin: 'left',
+            duration: 1250,
+            distance: '5%'
+        });
+        
+        ScrollReveal().reveal('button', {
+            origin: 'left',
+            duration: 1000,
             distance: '20%'
         });
+    
     }
 
     function inicializar() {
