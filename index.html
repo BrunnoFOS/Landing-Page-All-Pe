@@ -442,7 +442,7 @@
             <div class="dish-btn">
               <button class="btn-default">
                 <a style="text-decoration: none; color: #ffffeb"
-                  href="https://api.whatsapp.com/send?1=pt_BR&phone=5584988730473">Fale conosco</a>
+                  href="https://api.whatsapp.com/send?1=pt_BR&phone=558488730472">Fale conosco</a>
               </button>
             </div>
           </div>
@@ -521,53 +521,71 @@
       </section>
 
       <section id="contactForm">
-        <form
-          id="formContact"
-          action="https://formsubmit.co/22ec679a0266e6ebd430d690fd62d830"
-          method="post"
-        >
-          <label for="name">Nome:</label>
-          <input
-            id="nome"
-            type="text"
-            name="Nome"
-            placeholder="Como devemos te chamar?"
+          <form
+            id="formContact"
+            action="https://formsubmit.co/22ec679a0266e6ebd430d690fd62d830"
+            method="post"
+          >
+            <label for="name">Nome:</label>
+            <input
+              id="nome"
+              type="text"
+              name="Nome"
+              placeholder="Como devemos te chamar?"
+            />
+            <div id="nomeError" class="error" style="display: none; color: red">
+              Por favor, preencha seu nome.
+            </div>
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              type="text"
+              name="E-mail"
+              placeholder="Digite seu melhor e-mail!"
+            />
+            <div id="emailError" class="error" style="display: none; color: red">
+              Por favor, preencha seu email.
+            </div>
+            <label for="numero">Telefone:</label>
+            <input
+              id="numero"
+              type="tel"
+              name="Número"
+              placeholder="Digite seu telefone com DDD. Ex: 84998765432"
+            />
+            <div id="numeroError" class="error" style="display: none; color: red">
+              Por favor, preencha seu telefone.
+            </div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              name="Mensagem do cliente"
+              id="mensagem"
+              placeholder="Digite sua mensagem."
+            ></textarea>
+            <div
+              id="mensagemError"
+              class="error"
+              style="display: none; color: red"
+            >
+              Por favor, preencha sua mensagem.
+            </div>
+            <div id="mensagemEnviada" style="display: none; color: green">
+              Sua mensagem foi enviada com sucesso!
+            </div>
+            <input
+            type="hidden"
+            name="_next"
+            value="https://allpenatal.vercel.app"
           />
-          <div id="nomeError" class="error" style="display: none; color: red">
-            Por favor, preencha seu nome.
-          </div>
-
-          <label for="email">Email:</label>
           <input
-            id="email"
-            type="email"
-            name="E-mail"
-            placeholder="Digite seu melhor e-mail!"
+            type="hidden"
+            name="_autoresponse"
+            value="Nós da All Pé - Natal já recebemos sua solicitação! Entraremos em contatos em breve."
           />
-          <div id="emailError" class="error" style="display: none; color: red">
-            Por favor, preencha seu email.
-          </div>
-
-          <label for="numero">Telefone:</label>
-          <input
-            id="numero"
-            type="tel"
-            name="Número"
-            placeholder="Digite seu telefone com DDD. Ex: 84998765432"
-          />
-          <div id="numeroError" class="error" style="display: none; color: red">
-            Por favor, preencha seu telefone.
-          </div>
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea name="Mensagem do cliente" id="mensagem" placeholder="Digite sua mensagem."></textarea>
-        <div id="mensagemError" class="error" style="display:none;color:red;">Por favor, preencha sua mensagem.</div>
-        <div id="mensagemEnviada" style="display:none;color:green;">Sua mensagem foi enviada com sucesso!</div>
-        <button class="btn-default">Enviar</button>
-        <input type="hidden" name="redirectTo" value="">
-        <input type="hidden" name="accessKey" value="c9388467-f145-4935-a0d4-75ba9efd3d27">
-      </form>
-    </section>
+          <input type="hidden" name="_captcha" value="false" />
+            <button class="btn-default">Enviar</button>
+          </form>
+        </section>
   </main>
 
     <footer>
