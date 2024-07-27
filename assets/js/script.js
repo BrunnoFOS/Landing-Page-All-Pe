@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     const secoes = $('section');
     const itensNav = $('.nav-item');
     const alturaCabecalho = $('header').outerHeight();
@@ -8,7 +8,7 @@ $(document).ready(function() {
 
         let indiceSecaoAtiva = 0;
 
-        secoes.each(function(i) {
+        secoes.each(function (i) {
             const secao = $(this);
             const topoSecao = secao.offset().top;
             const fundoSecao = topoSecao + secao.outerHeight();
@@ -103,13 +103,13 @@ $(document).ready(function() {
             duration: 1250,
             distance: '5%'
         });
-        
+
         ScrollReveal().reveal('button', {
             origin: 'left',
             duration: 1000,
             distance: '20%'
         });
-    
+
     }
 
     function inicializar() {
@@ -123,7 +123,7 @@ $(document).ready(function() {
     inicializar();
 });
 
-document.getElementById('formContact').addEventListener('submit', function(event) {
+document.getElementById('formContact').addEventListener('submit', function (event) {
     event.preventDefault();
 
     let nome = document.getElementById('nome').value;
@@ -164,9 +164,22 @@ document.getElementById('formContact').addEventListener('submit', function(event
 
     if (!hasError) {
         mensagemEnviada.style.display = 'block';
-        setTimeout(function() {
+        setTimeout(function () {
             mensagemEnviada.style.display = 'none';
             document.getElementById('formContact').submit();
         }, 2000);
     }
 });
+$(document).ready(function () {
+    var ultimaPosicaoScroll = 0;
+    $(window).scroll(function (event) {
+        var posicaoScrollAtual = $(this).scrollTop();
+        if (posicaoScrollAtual > ultimaPosicaoScroll) {
+            $('#header').addClass('hidden');
+        } else {
+            $('#header').removeClass('hidden');
+        }
+        ultimaPosicaoScroll = posicaoScrollAtual;
+    });
+});
+
