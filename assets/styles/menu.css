@@ -77,43 +77,47 @@ iframe {
 
 @media screen and (max-width: 1170px) {
     .dish {
-        flex: 1 1 30%; 
-        max-width: 30%;
+        flex: 1 1 45%;
+        max-width: 40%;
+        width: calc(50% - 12px);
     }
-}
 
-@media screen and (max-width: 768px) {
-    .dish {
-        flex: 1 1 45%; 
-        max-width: 45%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .dish {
-        flex: 1 1 100%; 
-        max-width: 100%;
-    }
-}
-
-
-@media screen and (max-width: 1170px) {
     #dishes {
         flex-wrap: wrap;
         justify-content: center;
     }
 
+
+}
+
+@media screen and (max-width: 768px) {
     .dish {
-        width: calc(50% - 12px);
+        flex: 1 1 45%;
+        max-width: 45%;
+
+    }
+
+    .dish-image {
+        width: 80%;
+        border-radius: 10%;
+        height: 250px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .dish {
+        flex: 1 1 100%;
+        max-width: 100%;
         width: 100%;
+    }
+
+    .dish-image {
+        width: 75%;
+        border-radius: 10%;
+        height: 250px;
     }
 
     #menu .section-subtitle {
         text-align: center;
     }
-} 
+}
